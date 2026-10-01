@@ -1,0 +1,29 @@
+.home-hero { padding-top: 28px; padding-bottom: 0; }
+.home-hero h1 { font-size: clamp(2.2rem, 4.4vw, 3.7rem); }
+
+/* viewfinder frame */
+.frame {
+  position: relative; border-radius: var(--r-frame); overflow: hidden; min-height: min(78vh, 720px);
+  background: linear-gradient(180deg, #cfc8f5 0%, #dce4fa 45%, #eef0fb 100%);
+  border: 1px solid rgba(255, 255, 255, 0.9); box-shadow: var(--shadow);
+  display: grid; align-items: end;
+}
+.corner { position: absolute; width: 64px; height: 64px; border: 5px solid var(--sky); opacity: 0.9; }
+.corner.tl { top: 22px; left: 22px; border-right: 0; border-bottom: 0; border-top-left-radius: 26px; }
+.corner.tr { top: 22px; right: 22px; border-left: 0; border-bottom: 0; border-top-right-radius: 26px; }
+.corner.bl { bottom: 22px; left: 22px; border-right: 0; border-top: 0; border-bottom-left-radius: 26px; }
+.corner.br { bottom: 22px; right: 22px; border-left: 0; border-top: 0; border-bottom-right-radius: 26px; }
+
+.hero-copy {
+  position: relative; margin: clamp(20px, 4vw, 56px); padding: clamp(24px, 3.4vw, 44px);
+  border-radius: var(--r-panel); max-width: 640px;
+}
+.hero-copy p { color: var(--ink-2); }
+
+.home-split-gap { margin-top: 28px; }
+
+@media (max-width: 700px) {
+  .frame { min-height: 0; display: block; }
+  .corner { width: 44px; height: 44px; border-width: 4px; }
+  .hero-copy { margin: 250px 14px 14px; padding: 24px; }
+}

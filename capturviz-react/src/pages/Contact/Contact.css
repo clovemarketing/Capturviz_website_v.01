@@ -1,0 +1,41 @@
+.contact-grid { display: grid; grid-template-columns: 1.7fr 1fr; gap: 28px; align-items: start; }
+@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.form-grid .full { grid-column: 1 / -1; }
+@media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
+
+.contact-form label, .contact-form .legend { display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+.contact-form .req { color: var(--sky-text); }
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"],
+.contact-form select, .contact-form textarea {
+  width: 100%; font: inherit; color: var(--ink); padding: 13px 15px; border-radius: var(--r-field);
+  border: 1px solid rgba(37, 40, 102, 0.18); background: rgba(255, 255, 255, 0.8);
+}
+.contact-form textarea { min-height: 140px; resize: vertical; }
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+  outline: 3px solid rgba(66, 176, 228, 0.55); outline-offset: 1px; border-color: var(--sky);
+}
+.contact-form fieldset { border: 0; padding: 0; margin: 0; }
+
+.checks { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 640px) { .checks { grid-template-columns: 1fr; } }
+.contact-form .check {
+  display: flex; gap: 10px; align-items: flex-start; font-weight: 400; margin: 0;
+  padding: 10px 12px; border-radius: 12px; background: rgba(255, 255, 255, 0.55);
+}
+.check input { margin-top: 0.3em; accent-color: var(--ink); width: 18px; height: 18px; flex: none; }
+
+.error { color: #a4262c; font-size: 0.88rem; margin: 6px 0 0; }
+.field.invalid input, .field.invalid select, .field.invalid textarea { border-color: #a4262c; }
+
+.form-status { margin-top: 18px; padding: 16px 18px; border-radius: 16px; display: none; }
+.form-status.ok, .form-status.error, .form-status.unconfigured { display: block; }
+.form-status.ok { background: rgba(66, 176, 228, 0.14); border: 1px solid rgba(66, 176, 228, 0.4); }
+.form-status.error, .form-status.unconfigured { background: #fff6e5; border: 1px solid #f0c36d; }
+
+.next-steps h2 { font-size: 1.5rem; }
+.next-steps .steps { margin-top: 18px; }
+.next-steps .steps li { background: rgba(255, 255, 255, 0.06); }
+.next-steps .steps h3 { font-size: 1rem; }
+.next-steps .steps p { color: #c9ccf0; }

@@ -1,0 +1,9 @@
+.faq details { border-radius: 20px; padding: 0 24px; margin-bottom: 12px; }
+.faq summary {
+  cursor: pointer; padding: 20px 0; font: 600 1.05rem var(--display); list-style: none;
+  display: flex; justify-content: space-between; gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-size: 1.4rem; line-height: 1; color: var(--sky-text); }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { padding-bottom: 18px; margin: 0; color: var(--muted); }

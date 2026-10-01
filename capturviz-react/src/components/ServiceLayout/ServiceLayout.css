@@ -1,0 +1,3 @@
+.service-page .tile h3 { margin-top: 0; }
+.service-note { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+@media (max-width: 640px) { .service-note { grid-template-columns: 1fr; } }

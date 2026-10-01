@@ -1,0 +1,2 @@
+/* Privacy page — page-specific overrides go here. Shared styles: components/LegalLayout/LegalLayout.css */
+.privacy-page .legal-prose h2:first-of-type { margin-top: 0; }

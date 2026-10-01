@@ -1,0 +1,6 @@
+.legal-prose h2 { font-size: 1.4rem; margin-top: 1.6em; }
+.legal-prose p { max-width: 72ch; }
+.legal-note {
+  border-radius: 18px; padding: 16px 20px; margin-bottom: 28px;
+  background: #fff6e5; border: 1px solid #f0c36d; color: #5b4310;
+}

@@ -1,0 +1,11 @@
+.page-hero { padding-top: 40px; padding-bottom: 24px; }
+.page-hero-panel { position: relative; overflow: hidden; }
+/* the lens ring from the logo, cropped into the corner */
+.page-hero-panel::after {
+  content: ""; position: absolute; right: -60px; top: -60px; width: 280px; height: 280px;
+  border-radius: 50%; border: 22px solid rgba(66, 176, 228, 0.16); pointer-events: none;
+}
+.crumbs { font-size: 0.9rem; color: var(--muted); margin-bottom: 18px; }
+.crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; }
+.crumbs li + li::before { content: "/"; margin-right: 6px; opacity: 0.5; }
+.crumbs a { color: var(--muted); }

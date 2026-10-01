@@ -1,0 +1,8 @@
+.how-steps { max-width: 900px; }
+.how-steps li { position: relative; }
+/* thin connector between step markers */
+.how-steps li:not(:last-child)::after {
+  content: ""; position: absolute; left: 49px; top: 74px; bottom: -14px; width: 2px;
+  background: linear-gradient(var(--sky), transparent);
+}
+@media (max-width: 640px) { .how-steps li:not(:last-child)::after { display: none; } }

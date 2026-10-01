@@ -1,0 +1,17 @@
+.site-footer { padding: 40px 0 30px; }
+.foot {
+  border-radius: var(--r-frame); padding: clamp(28px, 4vw, 48px);
+  display: grid; grid-template-columns: 1.3fr repeat(3, 1fr); gap: 32px;
+}
+.foot h3 { font-size: 1rem; margin-bottom: 12px; }
+.foot ul { list-style: none; padding: 0; margin: 0; }
+.foot li { margin-bottom: 8px; }
+.foot li a { color: var(--ink-2); text-decoration: none; }
+.foot li a:hover { text-decoration: underline; }
+.foot-logo { width: 150px; margin-bottom: 16px; }
+.foot-bottom {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
+  font-size: 0.88rem; color: var(--muted); padding: 18px 8px 0;
+}
+@media (max-width: 900px) { .foot { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .foot { grid-template-columns: 1fr; } }
